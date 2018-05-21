@@ -1,0 +1,9 @@
+<h1>Home#index 목록</h1>
+<p>Find me in app/views/home/list.html.erb</p>
+<% @all_form.each do |form| %>
+    제목 : <a href="/form/show/<%= form.id %>"><%= form.title %></a> <br>
+    작성자: <%= form.editor %> <br>
+    내용 : <%= form.content %> <br>
+   
+<% end %>
+<a href="/form/new">글쓰기</a><br>
