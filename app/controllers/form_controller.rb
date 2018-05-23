@@ -5,6 +5,7 @@ class FormController < ApplicationController
 
   def show
     @show_form = Form.find(params[:show_id])
+    @show_replies = @show_form.replies
   end
 
   def new

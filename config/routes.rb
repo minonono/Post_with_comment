@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'reply/create'
+
+  get 'reply/destroy'
+
   root 'form#index'
 
   get 'form/show/:show_id' => 'form#show'
@@ -13,6 +17,9 @@ Rails.application.routes.draw do
 
   get 'form/destroy/:destroy_id' => 'form#destroy'
 
+  post 'reply/create'
+  get 'reply/destroy/:d_id' => 'reply#destroy'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
