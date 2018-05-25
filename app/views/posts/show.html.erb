@@ -1,8 +1,8 @@
 제목: <%= @show_form.title %> <br>
 작성자: <%= @show_form.editor %> <br>
 내용: <%= @show_form.content %> <br>
-<a href='/form/edit/<%= @show_form.id %>'>[수정]</a>
-<a href='/form/destroy/<%= @show_form.id %>'>[삭제]</a>
+<a href='/posts/edit/<%= @show_form.id %>'>[수정]</a>
+<a href='/posts/destroy/<%= @show_form.id %>'>[삭제]</a>
 
 <div>
 <% @show_replies.each do |reply| %>

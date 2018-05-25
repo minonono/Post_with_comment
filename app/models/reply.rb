@@ -1,3 +1,3 @@
 class Reply < ActiveRecord::Base
-    belongs_to :Form
+    belongs_to :Post
 end

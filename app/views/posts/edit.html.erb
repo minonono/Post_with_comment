@@ -1,6 +1,6 @@
 <div class="container">
     <h1>New writing</h1>
-    <form action="/form/update/<%= @edit_form.id %>" method="POST">
+    <form action="/post/update/<%= @edit_form.id %>" method="POST">
       <div class="form-group">
         <label for="exampleInputEmail1">title</label>
         <input type="text" value="<%= @edit_form.title %>" name="title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">

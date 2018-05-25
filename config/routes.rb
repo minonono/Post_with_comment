@@ -3,20 +3,20 @@ Rails.application.routes.draw do
 
   get 'reply/destroy'
 
-  root 'form#index'
+  root 'posts#index'
 
-  get 'form/show/:show_id' => 'form#show'
+  get 'posts/show/:show_id' => 'posts#show'
 
-  get 'form/new'
+  get 'posts/new'
 
-  post 'form/create'
+  post 'posts/create'
 
-  get 'form/edit/:edit_id' => 'form#edit'
+  get 'posts/edit/:edit_id' => 'post#edit'
 
-  post 'form/update/:update_id' => 'form#update'
+  post 'posts/update/:update_id' => 'posts#update'
 
-  get 'form/destroy/:destroy_id' => 'form#destroy'
-
+  get 'posts/destroy/:destroy_id' => 'posts#destroy'
+  
   post 'reply/create'
   get 'reply/destroy/:d_id' => 'reply#destroy'
   

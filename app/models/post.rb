@@ -1,3 +1,3 @@
-class Form < ActiveRecord::Base
+class Post < ActiveRecord::Base
     has_many :replies, dependent: :destroy
 end

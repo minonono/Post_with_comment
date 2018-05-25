@@ -11,9 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180523022456) do
+ActiveRecord::Schema.define(version: 20180525190936) do
 
-  create_table "forms", force: :cascade do |t|
+  create_table "posts", force: :cascade do |t|
     t.string   "title"
     t.string   "editor"
     t.text     "content"
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20180523022456) do
   create_table "replies", force: :cascade do |t|
     t.string   "editor"
     t.text     "content"
-    t.integer  "Form_id"
+    t.integer  "Post_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
